@@ -79,3 +79,212 @@ body {
   font-size: 1.25rem;
   padding: 10px 20px 10px 0;
 }
+
+/* Main section styles */
+.main {
+  padding: 40px;
+}
+
+.book-catalog {
+  flex: 1;
+  padding: 20px;
+}
+
+.book__cards {
+  display: grid;
+  gap: 60px 40px;
+  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fill, 600px);
+}
+
+.book__cards--item {
+  column-gap: 40px;
+}
+
+.book__img {
+  position: relative;
+}
+
+.book__img--cover {
+  inset: 0;
+  opacity: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  background-color: #ffa600bd;
+  transition: opacity 0.3s linear;
+}
+
+.book__img:hover .book__img--cover {
+  opacity: 1;
+}
+
+.book__title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.book__author {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffb800;
+}
+
+.book__price {
+  padding: 10px 0;
+  column-gap: 5px;
+}
+
+big {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.book__btn {
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 130%;
+  text-align: center;
+  padding: 11px 36px;
+  background: #ffb800;
+  border-radius: 22.5px;
+  transition: all 0.2s ease-out;
+}
+
+.book__btn:not(:active):hover {
+  scale: 1.05;
+  transform-origin: center;
+  transition: all 0.2s ease-in;
+}
+
+.show-more:hover {
+  scale: 1.05;
+  transform-origin: center;
+  transition: all 0.2s ease-in;
+}
+
+.show-more {
+  padding: 5px;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: all 0.2s ease-out;
+}
+
+.your-bag {
+  width: 350px;
+  min-height: 100vh;
+  padding: 30px 40px;
+  overflow-x: hidden;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+}
+
+.your-bag h2 {
+  margin-bottom: 40px;
+}
+
+.your-bag__cards {
+  position: relative;
+}
+
+.your-bag__card {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.your-bag__card h3 {
+  margin: 10px 0;
+}
+
+.counter {
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.counter button {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #eceaea;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.counter .plus {
+  background-color: #ffb800;
+}
+
+.hidden-top {
+  display: none;
+}
+
+.left {
+  top: 50%;
+  border: 0;
+  left: -50px;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+}
+
+.right {
+  top: 50%;
+  border: 0;
+  right: -50px;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+}
+
+.overlay {
+  inset: 0;
+  position: fixed;
+  transition: all 0.5s linear;
+  background-color: #b7b4ac80;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 30px;
+  position: fixed;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: -5000px;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: all 0.5s linear;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+}
+
+.close {
+  top: -15px;
+  width: 40px;
+  right: -15px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #d43c3c;
+}
