@@ -41,3 +41,41 @@ body {
   text-align: center;
 }
 
+/* Header section styles */
+.header {
+  height: 60vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://picsum.photos/1200");
+}
+
+.header__title {
+  color: #fff;
+  font-size: 4rem;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.header__search--section {
+  width: 600px;
+  padding: 10px;
+  column-gap: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.header__search--icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.header__input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  font-size: 1.25rem;
+  padding: 10px 20px 10px 0;
+}
