@@ -10,3 +10,34 @@ body {
   overflow-x: hidden;
   font-family: sans-serif;
 }
+
+/* Classes */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
